@@ -192,7 +192,7 @@ export HOME=/c/Users/TomohiroInoue
 # alias cd=cd_func
 function sudo()
 {
-  runas /user:administrator $1
+  powershell start-process /c/msys64/usr/bin/bash.exe -ArgumentList "$1" -verb runas
 }
 alias sudo='sudo'
 
@@ -224,3 +224,11 @@ function excel()
 }
 
 alias excel='excel'
+
+function latestFileOpen()
+{
+  fname=`ls -t | head -n 1`
+  open $fname
+}
+
+alias lopen='latestFileOpen'
