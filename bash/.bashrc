@@ -232,3 +232,10 @@ function latestFileOpen()
 }
 
 alias lopen='latestFileOpen'
+
+function cdl()
+{
+  cd $1 && ll
+}
+
+alias cdl='cdl'
