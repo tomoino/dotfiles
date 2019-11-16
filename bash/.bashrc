@@ -239,3 +239,10 @@ function cdl()
 }
 
 alias cdl='cdl'
+
+function gc()
+{
+  gcc $1.c -o $_ -lm -pedantic -Wall
+}
+
+alias gc='gc'
