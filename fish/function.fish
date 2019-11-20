@@ -3,16 +3,20 @@ function reload
   source ~/.config/fish/config.fish
 end
 
+function open
+  wsl-open $argv
+end
+
 function mcd
-  mkdir $argv and cd $argv
+  mkdir $argv; and cd $argv
 end
 
 function touchAndOpen
-  touch $argv and open $argv
+  touch $argv; and open $argv
 end
 
 function excel
-  cp /mnt/c/data/apps/archives/Excel/Book1.xlsx $argv and open $argv
+  cp /mnt/c/data/apps/archives/Excel/Book1.xlsx $argv; and open $argv
 end
 
 function latestFileOpen
@@ -21,13 +25,9 @@ function latestFileOpen
 end
 
 function cdl
-  cd $argv and ll
+  cd $argv; and ll
 end
 
 function gc
   gcc $argv.c -o $argv -lm -pedantic -Wall
-end
-
-function open
-  wsl-open $argv
 end
