@@ -9,3 +9,14 @@ alias la 'ls -A'
 
 alias topen 'touchAndOpen'
 alias lopen 'latestFileOpen'
+
+# git
+alias gad 'git add'
+alias gcm 'git commit'
+alias gst 'git status'
+alias glg 'git log'
+alias gbr 'git branch'
+alias gco 'git checkout'
+alias gps 'git push'
+alias gpl 'git pull'
+alias gcl 'git clone'
