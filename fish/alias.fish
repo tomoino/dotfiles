@@ -21,3 +21,7 @@ alias gps 'git push'
 alias gpsm 'git push origin master'
 alias gpl 'git pull'
 alias gcl 'git clone'
+
+# docker
+alias docker 'docker.exe'
+alias docker-compose 'docker-compose.exe'
