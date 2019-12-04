@@ -21,3 +21,9 @@ alias gps 'git push'
 alias gpsm 'git push origin master'
 alias gpl 'git pull'
 alias gcl 'git clone'
+
+# cloudSQL
+alias perticleSqlProxyOn './cloud_sql_proxy.exe -instances=perticle:us-central1:perticle=tcp:3306 -credential_file=perticle-67942c8145a9.json &'
+
+# mysql
+alias mysqlRL 'mysql -u root -p --host 127.0.0.1'
