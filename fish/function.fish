@@ -32,6 +32,10 @@ function gc
   gcc $argv.c -o $argv -lm -pedantic -Wall
 end
 
+function gp
+  g++ $argv.cpp -o $argv
+end
+
 function gcmm
   git commit -m $argv[1] -m '' -m $argv[2]
 end
