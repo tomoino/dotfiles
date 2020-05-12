@@ -24,14 +24,4 @@ alias gcl 'git clone'
 
 # docker
 alias docker 'docker.exe'
-<<<<<<< HEAD
 alias docker-compose 'docker-compose.exe'
-=======
-alias docker-compose 'docker-compose.exe'
-
-# cloudSQL
-alias perticleSqlProxyOn './cloud_sql_proxy.exe -instances=perticle:us-central1:perticle=tcp:3306 -credential_file=perticle-67942c8145a9.json &'
-
-# mysql
-alias mysqlRL 'mysql -u root -p --host 127.0.0.1'
->>>>>>> cf2cf8d2616810da52897d24bd6cac83fdc910a6

@@ -39,3 +39,9 @@ end
 function gcmm
   git commit -m $argv[1] -m '' -m $argv[2]
 end
+
+function ogc
+  gcc $argv.c -o $argv -lglut -lGLU -lGL -lm
+end
+
+
