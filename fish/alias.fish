@@ -25,3 +25,6 @@ alias gcl 'git clone'
 # docker
 alias docker 'docker.exe'
 alias docker-compose 'docker-compose.exe'
+
+# Google Cloud Platform
+alias gcloud '~/google-cloud-sdk/bin/gcloud'
