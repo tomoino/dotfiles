@@ -33,7 +33,7 @@ function gc
 end
 
 function gp
-  g++ $argv.cpp -o $argv
+  g++ $argv -o $argv
 end
 
 function gcmm
