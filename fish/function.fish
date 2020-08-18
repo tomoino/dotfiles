@@ -29,11 +29,11 @@ function cdl
 end
 
 function gc
-  gcc $argv.c -o $argv -lm -pedantic -Wall
+  gcc $argv -o (string replace .c '' $argv) -lm -pedantic -Wall
 end
 
 function gp
-  g++ $argv -o $argv
+  g++ $argv -o (string replace .cpp '' $argv)
 end
 
 function gcmm
