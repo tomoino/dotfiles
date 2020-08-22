@@ -44,4 +44,6 @@ function ogc
   gcc $argv.c -o $argv -lglut -lGLU -lGL -lm
 end
 
-
+function dcud
+  powershell.exe -Command "wsl docker-compose up -d"
+end
