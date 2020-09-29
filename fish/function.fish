@@ -47,3 +47,7 @@ end
 function dcud
   powershell.exe -Command "wsl docker-compose up -d"
 end
+
+function xopen
+  explorer.exe $argv
+end
