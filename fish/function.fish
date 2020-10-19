@@ -3,10 +3,6 @@ function reload
   source ~/.config/fish/config.fish
 end
 
-function open
-  wsl-open $argv
-end
-
 function mcd
   mkdir $argv; and cd $argv
 end
@@ -48,10 +44,11 @@ function dcud
   powershell.exe -Command "wsl docker-compose up -d"
 end
 
-function xopen
+function open
   explorer.exe $argv
 end
 
 function conda
   cmd.exe (pwd) /K C:\\Users\\TomohiroInoue\\anaconda3\\Scripts\\activate.bat C:\\Users\\TomohiroInoue\\anaconda3\\envs\\MyEnv
 end
+
