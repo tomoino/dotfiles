@@ -52,3 +52,7 @@ function conda
   cmd.exe (pwd) /K C:\\Users\\TomohiroInoue\\anaconda3\\Scripts\\activate.bat C:\\Users\\TomohiroInoue\\anaconda3\\envs\\MyEnv
 end
 
+function wsl
+  powershell.exe -Command "wsl $argv"
+end
+
