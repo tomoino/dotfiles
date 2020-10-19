@@ -56,3 +56,6 @@ function wsl
   powershell.exe -Command "wsl $argv"
 end
 
+function dotfile
+  code ~/dotfiles/
+end
