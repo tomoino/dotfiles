@@ -51,3 +51,7 @@ end
 function xopen
   explorer.exe $argv
 end
+
+function conda
+  cmd.exe (pwd) /K C:\\Users\\TomohiroInoue\\anaconda3\\Scripts\\activate.bat C:\\Users\\TomohiroInoue\\anaconda3\\envs\\MyEnv
+end
