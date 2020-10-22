@@ -7,14 +7,6 @@ function mcd
   mkdir $argv; and cd $argv
 end
 
-function touchAndOpen
-  touch $argv; and open $argv
-end
-
-function excel
-  cp /mnt/c/data/apps/archives/Excel/Book1.xlsx $argv; and open $argv
-end
-
 function latestFileOpen
   set fname `ls -t | head -n 1`
   open $fname
