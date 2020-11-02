@@ -18,9 +18,9 @@ alias glg 'git log'
 alias gbr 'git branch'
 alias gco 'git checkout'
 alias gps 'git push'
-alias gpsm 'git push origin master'
 alias gpl 'git pull'
 alias gcl 'git clone'
+alias gdi 'git diff'
 
 # docker
 alias docker 'docker.exe'
