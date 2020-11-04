@@ -39,3 +39,14 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/i
 test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
 test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 echo "eval $($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+
+#====================================================================
+# fish
+#====================================================================
+sudo apt-add-repository ppa:fish-shell/release-3
+sudo apt-get update
+sudo apt-get install -y fish
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+sudo apt-get install fonts-powerline
+fisher omf/theme-agnoster
+echo exec fish > ~/.bashrc
