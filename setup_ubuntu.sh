@@ -26,15 +26,15 @@ gsettings set org.gnome.gedit.preferences.encodings shown-in-menu "['UTF-8','SHI
 #====================================================================
 # vscodeの用意
 #====================================================================
-sudo apt-get install curl
+yes | sudo apt-get install curl
 curl -L https://go.microsoft.com/fwlink/?LinkID=760868 -o vscode.deb
-sudo apt install ./vscode.deb
+yes | sudo apt install ./vscode.deb
 code --version
 
 #====================================================================
 # brewの用意
 #====================================================================
-sudo apt-get install build-essential file
+yes | sudo apt-get install build-essential file
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
 test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
@@ -43,10 +43,10 @@ echo "eval $($(brew --prefix)/bin/brew shellenv)" >>~/.profile
 #====================================================================
 # fish
 #====================================================================
-sudo apt-add-repository ppa:fish-shell/release-3
-sudo apt-get update
-sudo apt-get install -y fish
+yes | sudo apt-add-repository ppa:fish-shell/release-3
+yes | sudo apt-get update
+yes | sudo apt-get install -y fish
 curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
-sudo apt-get install fonts-powerline
+yes | sudo apt-get install fonts-powerline
 fisher omf/theme-agnoster
 echo exec fish > ~/.bashrc
