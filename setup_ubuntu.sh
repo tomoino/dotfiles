@@ -2,14 +2,28 @@
 #====================================================================
 # aptのアップデート
 #====================================================================
-# yes | sudo apt-get update
-# yes | sudo apt-get upgrade
+cd ~
+yes | sudo apt-get update
+yes | sudo apt-get upgrade
 
 #====================================================================
 # gitの導入
 #====================================================================
-# sudo apt-get install git
-# git clone https://github.com/tomoino/dotfiles.git
+yes | sudo apt-get install git
+
+#====================================================================
+# sshの導入
+#====================================================================
+# mkdir ~/.ssh
+# cd ~/.ssh
+# ssh-keygen -t rsa
+# cd ~
+# yes | sudo apt-get install xclip
+# cat ~/.ssh/id_rsa.pub | xclip -selection clipboard
+# yes | sudo apt-get install xdg-utils
+# xdg-open https://github.com
+# read -p "Upload SSH public key to GitHub!"
+# git clone git@github.com:tomoino/dotfiles.git
 
 #====================================================================
 # 『デスクトップ』『音楽』などの日本語フォルダー名を英語表記にする
@@ -22,7 +36,6 @@ env LANGUAGE=C LC_MESSAGES=C xdg-user-dirs-gtk-update
 gsettings set org.gnome.gedit.preferences.encodings auto-detected "['UTF-8','CURRENT','SHIFT_JIS','EUC-JP','ISO-2022-JP','UTF-16']"
 gsettings set org.gnome.gedit.preferences.encodings shown-in-menu "['UTF-8','SHIFT_JIS','EUC-JP','ISO-2022-JP','UTF-16']"
 
-
 #====================================================================
 # vscodeの用意
 #====================================================================
@@ -34,11 +47,11 @@ code --version
 #====================================================================
 # brewの用意
 #====================================================================
-yes | sudo apt-get install build-essential file
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
-test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-echo "eval $($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+# yes | sudo apt-get install build-essential file
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+# test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+# test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+# echo "eval $($(brew --prefix)/bin/brew shellenv)" >>~/.profile
 
 #====================================================================
 # fish
