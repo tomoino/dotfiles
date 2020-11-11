@@ -63,3 +63,24 @@ curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fishe
 yes | sudo apt-get install fonts-powerline
 fisher omf/theme-agnoster
 echo exec fish > ~/.bashrc
+
+#====================================================================
+# python
+#====================================================================
+# curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+# echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
+# echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+# echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+# source ~/.bashrc
+# pyenv -v
+# yes | sudo apt-get install zlib1g-dev
+# yes | sudo apt install libffi-dev # 3.7以上で必要
+# pyenv install 3.9.0
+# pyenv global 3.9.0
+
+# pip install pipx
+# pipx ensurepath
+# pipx completions
+
+# curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+# poetry config virtualenvs.in-project true
