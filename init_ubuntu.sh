@@ -36,3 +36,22 @@ yes | sudo apt-get install xdg-utils
 xdg-open https://github.com
 read -p "Upload SSH public key to GitHub!"
 git clone git@github.com:tomoino/dotfiles.git
+
+#====================================================================
+# fish
+#====================================================================
+if !(type fish > /dev/null 2>&1); then
+    yes | sudo apt-add-repository ppa:fish-shell/release-3
+    yes | sudo apt-get update
+    yes | sudo apt-get install -y fish
+    # curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+    yes | sudo apt-get install fonts-powerline
+    # fisher omf/theme-agnoster
+    echo exec fish > ~/.bashrc
+    ln -s ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
+    ln -s ~/dotfiles/fish/alias.fish ~/.config/fish/alias.fish
+    ln -s ~/dotfiles/fish/function.fish ~/.config/fish/function.fish
+    mkdir ~/.config/fish/functions
+    ln -s ~/dotfiles/fish/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
+    fish
+fi
