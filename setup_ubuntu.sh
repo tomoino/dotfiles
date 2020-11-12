@@ -13,10 +13,16 @@ if !(type fish > /dev/null 2>&1); then
     echo exec fish > ~/.bashrc
     fish
 fi
+ln -s ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
+# ln -s ~/dotfiles/fish/alias.fish ~/.config/fish/alias.fish
+# ln -s ~/dotfiles/fish/function.fish ~/.config/fish/function.fish
+mkdir ~/.config/fish/functions
+ln -s ~/dotfiles/fish/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
+
 #====================================================================
 # vscodeの用意
 #====================================================================
-# if !(type -q code9;
+# if !(type -q code);
 #     yes | sudo apt-get install curl
 #     curl -L https://go.microsoft.com/fwlink/?LinkID=760868 -o vscode.deb
 #     yes | sudo apt install ./vscode.deb
@@ -36,9 +42,8 @@ fi
 #====================================================================
 # curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
 # echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
-# echo 'eval "$(pyenv init -)"' >> ~/.bashrc
-# echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
-# source ~/.bashrc
+# echo eval (pyenv init - ) >> ~/dotfiles/fish/config.fish # config.fishに書き込まれていない場合は実行
+# reload
 # pyenv -v
 # yes | sudo apt-get install zlib1g-dev
 # yes | sudo apt install libffi-dev # 3.7以上で必要
