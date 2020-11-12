@@ -3,12 +3,13 @@
 #====================================================================
 # vscodeの用意
 #====================================================================
-if !(type -q code);
+if not type -q code
     yes | sudo apt-get install curl
-    curl -L https://go.microsoft.com/fwlink/?LinkID=760868 -o vscode.deb
+    curl -L https://go.microsoft.com/fwlink/\?LinkID=760868 -o vscode.deb
     yes | sudo apt install ./vscode.deb
+    reload
     code --version
-end;
+end
 #====================================================================
 # brewの用意
 #====================================================================
