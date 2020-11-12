@@ -3,7 +3,7 @@
 #====================================================================
 # fish
 #====================================================================
-if type fish > /dev/null 2>&1; then
+if !(type fish > /dev/null 2>&1); then
     yes | sudo apt-add-repository ppa:fish-shell/release-3
     yes | sudo apt-get update
     yes | sudo apt-get install -y fish
@@ -16,7 +16,7 @@ fi
 #====================================================================
 # vscodeの用意
 #====================================================================
-# if type -q code;
+# if !(type -q code9;
 #     yes | sudo apt-get install curl
 #     curl -L https://go.microsoft.com/fwlink/?LinkID=760868 -o vscode.deb
 #     yes | sudo apt install ./vscode.deb
