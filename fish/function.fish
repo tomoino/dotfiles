@@ -7,11 +7,6 @@ function mcd
   mkdir $argv; and cd $argv
 end
 
-function latestFileOpen
-  set fname `ls -t | head -n 1`
-  open $fname
-end
-
 function cdl
   cd $argv; and ll
 end
@@ -48,6 +43,6 @@ function wsl
   powershell.exe -Command "wsl $argv"
 end
 
-function dotfile
+function dotfiles
   code ~/dotfiles/
 end

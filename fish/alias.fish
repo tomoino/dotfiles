@@ -7,9 +7,6 @@ alias ls 'ls --color=auto --show-control-chars --time-style=long-iso -FH'
 alias ll 'ls -lA'
 alias la 'ls -A'
 
-alias topen 'touchAndOpen'
-alias lopen 'latestFileOpen'
-
 # git
 alias gad 'git add'
 alias gcm 'git commit'
