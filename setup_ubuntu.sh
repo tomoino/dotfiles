@@ -12,22 +12,22 @@ if !(type fish > /dev/null 2>&1); then
     # fisher omf/theme-agnoster
     echo exec fish > ~/.bashrc
     ln -s ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
+    ln -s ~/dotfiles/fish/alias.fish ~/.config/fish/alias.fish
+    ln -s ~/dotfiles/fish/function.fish ~/.config/fish/function.fish
     mkdir ~/.config/fish/functions
     ln -s ~/dotfiles/fish/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
     fish
 fi
-ln -s ~/dotfiles/fish/alias.fish ~/.config/fish/alias.fish
-ln -s ~/dotfiles/fish/function.fish ~/.config/fish/function.fish
 
 #====================================================================
 # vscodeの用意
 #====================================================================
-# if !(type -q code);
-#     yes | sudo apt-get install curl
-#     curl -L https://go.microsoft.com/fwlink/?LinkID=760868 -o vscode.deb
-#     yes | sudo apt install ./vscode.deb
-#     code --version
-# end;
+if !(type -q code);
+    yes | sudo apt-get install curl
+    curl -L https://go.microsoft.com/fwlink/?LinkID=760868 -o vscode.deb
+    yes | sudo apt install ./vscode.deb
+    code --version
+end;
 #====================================================================
 # brewの用意
 #====================================================================
