@@ -3,7 +3,7 @@
 #====================================================================
 # fish
 #====================================================================
-if !(type fish > /dev/null 2>&1); then
+if !(type fish > /dev/null 2>&1);
     yes | sudo apt-add-repository ppa:fish-shell/release-3
     yes | sudo apt-get update
     yes | sudo apt-get install -y fish
