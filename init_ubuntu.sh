@@ -21,7 +21,7 @@ gsettings set org.gnome.gedit.preferences.encodings shown-in-menu "['UTF-8','SHI
 #====================================================================
 # gitの導入
 #====================================================================
-if !(type fish > /dev/null 2>&1); then
+if !(type git > /dev/null 2>&1); then
     yes | sudo apt-get install git
 
 #====================================================================
@@ -49,6 +49,7 @@ if !(type fish > /dev/null 2>&1); then
     yes | sudo apt-get install fonts-powerline
     # fisher omf/theme-agnoster
     echo exec fish > ~/.bashrc
+    mkdir ~/.config/fish
     ln -s ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
     ln -s ~/dotfiles/fish/alias.fish ~/.config/fish/alias.fish
     ln -s ~/dotfiles/fish/function.fish ~/.config/fish/function.fish
