@@ -36,7 +36,8 @@ if not type -q pyenv
 end
 
 if not type -q pip
-    sudo apt install python-pip
+    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+    sudo python get-pip.py
 end
 
 if not type -q pipx
