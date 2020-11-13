@@ -1,7 +1,7 @@
 #!/bin/fish
 # Ubuntu用：initの後に実行。
 #====================================================================
-# vscodeの用意
+# vscodeの用意 vscode公式のSettings Syncの登録は手動
 #====================================================================
 if not type -q code
     yes | sudo apt-get install curl
@@ -23,19 +23,30 @@ end
 #====================================================================
 # python
 #====================================================================
-# curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
-# echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
-# echo eval (pyenv init - ) >> ~/dotfiles/fish/config.fish # config.fishに書き込まれていない場合は実行
-# reload
-# pyenv -v
-# yes | sudo apt-get install zlib1g-dev
-# yes | sudo apt install libffi-dev # 3.7以上で必要
-# pyenv install 3.9.0
-# pyenv global 3.9.0
+if not type -q pyenv
+    curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | fish
+    # echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
+    # echo eval (pyenv init - ) >> ~/dotfiles/fish/config.fish # config.fishに書き込まれていない場合は実行
+    reload
+    pyenv -v
+    yes | sudo apt-get install zlib1g-dev
+    yes | sudo apt install libffi-dev # 3.7以上で必要
+    pyenv install 3.9.0
+    pyenv global 3.9.0
+end
 
-# pip install pipx
-# pipx ensurepath
-# pipx completions
+if not type -q pip
+    sudo apt install python-pip
+end
 
-# curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
-# poetry config virtualenvs.in-project true
+if not type -q pipx
+    pip install pipx
+    pipx ensurepath
+    pipx completions
+end
+
+if not type -q poetry
+    curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+    poetry config virtualenvs.in-project true
+    poetry completions fish > ~/.config/fish/completions/poetry.fish
+end

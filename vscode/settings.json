@@ -1,13 +1,10 @@
 {
     "editor.fontFamily": "'Ricty Diminished for Powerline', Consolas, 'Courier New', monospace",
-    "terminal.integrated.shell.windows": "C:\\msys64\\usr\\bin\\bash.exe",
-    "terminal.integrated.env.windows": {
-        "MSYSTEM": "MINGW64",
-        "CHERE_INVOKING": "1",
-        "MSYS2_PATH_TYPE": "inherit"
-    },
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
+    "terminal.integrated.fontFamily": "Cica",
     "terminal.integrated.shellArgs.windows": [
-        "--login"
+        "~",
+        "fish"
     ],
     "workbench.colorTheme": "Material Theme",
     "workbench.colorCustomizations": {
@@ -40,4 +37,10 @@
     "workbench.editor.enablePreview": false,
     "editor.formatOnType": true,
     "sync.gist": "344e223a3f9be3ad632fddb8d0f6aa03",
+    "window.zoomLevel": 0,
+    "terminal.integrated.shell.linux": "/usr/bin/fish",
+    "java.home": "/usr/lib/jvm/java-11-openjdk-amd64",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.semanticHighlighting.enabled": true,
 }
