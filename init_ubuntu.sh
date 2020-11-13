@@ -21,22 +21,23 @@ gsettings set org.gnome.gedit.preferences.encodings shown-in-menu "['UTF-8','SHI
 #====================================================================
 # gitの導入
 #====================================================================
-yes | sudo apt-get install git
+if !(type fish > /dev/null 2>&1); then
+    yes | sudo apt-get install git
 
 #====================================================================
 # sshの導入
 #====================================================================
-mkdir ~/.ssh
-cd ~/.ssh
-ssh-keygen -t rsa
-cd ~
-yes | sudo apt-get install xclip
-cat ~/.ssh/id_rsa.pub | xclip -selection clipboard
-yes | sudo apt-get install xdg-utils
-xdg-open https://github.com
-read -p "Upload SSH public key to GitHub!"
-git clone git@github.com:tomoino/dotfiles.git
-
+    mkdir ~/.ssh
+    cd ~/.ssh
+    ssh-keygen -t rsa
+    cd ~
+    yes | sudo apt-get install xclip
+    cat ~/.ssh/id_rsa.pub | xclip -selection clipboard
+    yes | sudo apt-get install xdg-utils
+    xdg-open https://github.com
+    read -p "Upload SSH public key to GitHub!"
+    git clone git@github.com:tomoino/dotfiles.git
+fi
 #====================================================================
 # fish
 #====================================================================

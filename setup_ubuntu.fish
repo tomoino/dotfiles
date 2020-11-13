@@ -9,6 +9,7 @@ if not type -q code
     yes | sudo apt install ./vscode.deb
     reload
     code --version
+    rm vscode.deb
 end
 #====================================================================
 # brewの用意
