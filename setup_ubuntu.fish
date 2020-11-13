@@ -19,7 +19,12 @@ end
 # test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
 # test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 # echo "eval $($(brew --prefix)/bin/brew shellenv)" >>~/.profile
-
+#====================================================================
+# gcc や make など、開発ツールの用意
+#====================================================================
+if not type -q gcc
+    sudo apt install build-essential
+end    
 #====================================================================
 # python
 #====================================================================
