@@ -23,19 +23,22 @@ end
 # gcc や make など、開発ツールの用意
 #====================================================================
 if not type -q gcc
-    sudo apt install build-essential
+    yes | sudo apt install build-essential
 end    
 #====================================================================
 # python
 #====================================================================
 if not type -q pyenv
+    sudo apt install -y libffi-dev
+    sudo apt install -y libssl-dev # openssl
+    sudo apt install -y zlib1g-dev
+    sudo apt install -y liblzma-dev
+    sudo apt install -y libbz2-dev libreadline-dev libsqlite3-dev # bz2, readline, sqlite3
     curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
     # echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
     # echo eval (pyenv init - ) >> ~/dotfiles/fish/config.fish # config.fishに書き込まれていない場合は実行
     reload
     pyenv -v
-    yes | sudo apt-get install zlib1g-dev
-    yes | sudo apt install libffi-dev # 3.7以上で必要
     pyenv install 3.9.0
     pyenv global 3.9.0
 end
