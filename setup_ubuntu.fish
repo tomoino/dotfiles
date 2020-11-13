@@ -29,7 +29,7 @@ end
 # python
 #====================================================================
 if not type -q pyenv
-    curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | fish
+    curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
     # echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
     # echo eval (pyenv init - ) >> ~/dotfiles/fish/config.fish # config.fishに書き込まれていない場合は実行
     reload
