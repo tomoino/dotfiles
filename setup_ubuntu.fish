@@ -39,8 +39,10 @@ if not type -q pyenv
     # echo eval (pyenv init - ) >> ~/dotfiles/fish/config.fish # config.fishに書き込まれていない場合は実行
     reload
     pyenv -v
-    pyenv install 3.9.0
-    pyenv global 3.9.0
+    # pyenv install 3.9.0
+    # pyenv global 3.9.0
+    # pyenv install 2.7.18
+    reload
 end
 
 if not type -q pip
