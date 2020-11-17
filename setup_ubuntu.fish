@@ -39,9 +39,10 @@ if not type -q pyenv
     # echo eval (pyenv init - ) >> ~/dotfiles/fish/config.fish # config.fishに書き込まれていない場合は実行
     reload
     pyenv -v
-    # pyenv install 3.9.0
-    # pyenv global 3.9.0
-    # pyenv install 2.7.18
+    sudo apt install -y python-is-python3 # defaultでpythonコマンド使えない場合
+    pyenv install 3.9.0
+    pyenv global 3.9.0
+    pyenv install 2.7.18
     reload
 end
 
@@ -60,4 +61,11 @@ if not type -q poetry
     curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
     poetry config virtualenvs.in-project true
     poetry completions fish > ~/.config/fish/completions/poetry.fish
+end
+
+#====================================================================
+# tex
+#====================================================================
+if not type -q ptex2pdf
+    sudo apt-get install -y texlive-full    
 end

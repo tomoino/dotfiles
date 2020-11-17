@@ -56,7 +56,6 @@ if !(type fish > /dev/null 2>&1); then
     mkdir ~/.config/fish/functions
     ln -s ~/dotfiles/fish/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
     mkdir ~/.config/fish/completions/
-    fish
 fi
 
 fish ~/dotfiles/setup_ubuntu.fish
