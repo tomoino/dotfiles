@@ -67,5 +67,6 @@ end
 # tex
 #====================================================================
 if not type -q ptex2pdf
-    sudo apt-get install -y texlive-full    
+    sudo apt-get install -y texlive-full
+    ln -s ~/dotfiles/latex/.latexmkrc ~/.latexmkrc
 end
