@@ -25,3 +25,11 @@ alias docker-compose 'docker-compose.exe'
 
 # Google Cloud Platform
 alias gcloud '~/google-cloud-sdk/bin/gcloud'
+
+# pyenv
+alias pe 'pyenv'
+alias pel 'pyenv local'
+alias peg 'pyenv global'
+alias pei 'pyenv install'
+alias peil 'pyenv install --list'
+alias pev 'pyenv versions'
