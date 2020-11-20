@@ -33,3 +33,9 @@ alias peg 'pyenv global'
 alias pei 'pyenv install'
 alias peil 'pyenv install --list'
 alias pev 'pyenv versions'
+
+# poetry
+alias poi 'poetry install'
+alias poini 'poetry init'
+alias popy 'poetry run python'
+alias poa 'poetry add'
