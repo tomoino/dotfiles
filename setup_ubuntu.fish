@@ -70,3 +70,10 @@ if not type -q ptex2pdf
     sudo apt-get install -y texlive-full
     ln -s ~/dotfiles/latex/.latexmkrc ~/.latexmkrc
 end
+
+#====================================================================
+# ghq
+#====================================================================
+if not type -q ghq
+    go get github.com/motemen/ghq
+end
