@@ -74,6 +74,22 @@ end
 #====================================================================
 # ghq
 #====================================================================
+if not type -q go
+    # sudo apt install -y golang
+    sudo wget https://storage.googleapis.com/golang/go1.15.5.linux-amd64.tar.gz
+    sudo tar -C /usr/local -xzf go1.15.5.linux-amd64.tar.gz
+end
+
 if not type -q ghq
-    go get github.com/motemen/ghq
+    go get github.com/x-motemen/ghq
+    echo "[ghq]" >> ~/.gitconfig
+	echo "    root = $GHQ_PROJECTS" >> ~/.gitconfig
+end
+
+if not type -q peco
+    go get github.com/peco/peco/cmd/peco
+end
+
+if not type -q hub
+    go get github.com/github/hub
 end

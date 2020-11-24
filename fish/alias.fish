@@ -16,8 +16,14 @@ alias gbr 'git branch'
 alias gco 'git checkout'
 alias gps 'git push'
 alias gpl 'git pull'
-alias gcl 'git clone'
+# alias gcl 'git clone'
 alias gdi 'git diff'
+
+alias gcl 'ghq get'
+alias gli 'ghq list --unique'
+alias gcd 'cd (ghq root)/(ghq list | peco)'
+alias gh 'hub browse (ghq list | peco | cut -d "/" -f 2,3)'
+alias ghc 'hub browse (basename (dirname $PWD))/(basename $PWD)'
 
 # docker
 alias docker 'docker.exe'
