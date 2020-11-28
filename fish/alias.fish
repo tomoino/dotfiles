@@ -45,3 +45,7 @@ alias poi 'poetry install'
 alias poini 'poetry init'
 alias popy 'poetry run python'
 alias poa 'poetry add'
+
+# heroku 一時的なalias
+alias hpg 'heroku pg:psql -a alibi-api'
+alias hdeploy 'git push heroku main'
