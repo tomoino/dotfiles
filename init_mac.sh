@@ -68,12 +68,18 @@ if !(type fish > /dev/null 2>&1); then
     cd ..
     rm -r fonts
 
+    curl -L https://get.oh-my.fish | fish
+    set -gx OMF_PATH $HOME/.local/share/omf
+    source $OMF_PATH/init.fish
+    set fish_theme agnoster
+    . ~/.config/fish/config.fish
+
     mkdir ~/.config/fish
     ln -s ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
     ln -s ~/dotfiles/fish/alias.fish ~/.config/fish/alias.fish
     ln -s ~/dotfiles/fish/function.fish ~/.config/fish/function.fish
     mkdir ~/.config/fish/functions
-    ln -s ~/dotfiles/fish/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
+    # ln -s ~/dotfiles/fish/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
     mkdir ~/.config/fish/completions/
     fish
 fi
