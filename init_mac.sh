@@ -75,6 +75,11 @@ if !(type fish > /dev/null 2>&1); then
     mkdir ~/.config/fish/functions
     ln -s ~/dotfiles/fish/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
     mkdir ~/.config/fish/completions/
+    touch ~/dotfiles/fish/env.fish
+    if is_arm; then
+        echo "SET BREW_PATH /opt/homebrew/bin" >> ~/dotfiles/fish/env.fish
+        echo "SET PATH \$BREW_PATH \$PATH" >> ~/dotfiles/fish/env.fish
+    fi
 
     # fishの色の設定
     set -U fish_color_autosuggestion 969896

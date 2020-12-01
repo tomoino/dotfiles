@@ -56,6 +56,7 @@ if !(type fish > /dev/null 2>&1); then
     mkdir ~/.config/fish/functions
     ln -s ~/dotfiles/fish/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
     mkdir ~/.config/fish/completions/
+    touch ~/.config/fish/env.fish
     
     # fishの色の設定
     # set -U | grep fish_color_ で現在の設定を確認できる
