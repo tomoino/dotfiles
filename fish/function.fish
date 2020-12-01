@@ -48,3 +48,7 @@ end
 function dotfiles
   code ~/dotfiles/
 end
+
+function is_arm
+  test $UNAME=="arm64"
+end

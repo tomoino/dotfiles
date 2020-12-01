@@ -9,6 +9,9 @@ set PATH $JDK_HOME $GOPATH/bin $GOROOT $PYENV_PATH $POETRY_PATH $HOME/bin $HOME/
 
 set GHQ_ROOT "~/projects"
 
+# アーキテクチャ名は UNAME に入れておく
+set UNAME (uname -m)
+
 # export DISPLAY=(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
 source ~/.config/fish/alias.fish
 source ~/.config/fish/function.fish

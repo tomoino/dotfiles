@@ -57,8 +57,8 @@ if !(type fish > /dev/null 2>&1); then
     ln -s ~/dotfiles/fish/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
     mkdir ~/.config/fish/completions/
     
-    
     # fishの色の設定
+    # set -U | grep fish_color_ で現在の設定を確認できる
     set -U fish_color_autosuggestion 969896
     set -U fish_color_cancel -r
     set -U fish_color_command 8abeb7

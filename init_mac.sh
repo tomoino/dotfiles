@@ -104,4 +104,6 @@ if !(type fish > /dev/null 2>&1); then
 fi
 
 # ターミナルのテーマ Iceberg は手動でインストールする必要あり
-# fish ~/dotfiles/setup_mac.fish
+# http://cocopon.github.io/iceberg.vim/
+
+fish ~/dotfiles/setup_mac.fish
