@@ -10,7 +10,9 @@ set UNAME (uname -m)
 source ~/.config/fish/alias.fish
 source ~/.config/fish/function.fish
 
-pyenv init - | source
+if type -q pyenv
+    pyenv init - | source
+end
 # if type -q pyenv
 #   set -gx PATH '/home/user/.pyenv/shims' $PATH
 #   set -gx PYENV_SHELL fish
