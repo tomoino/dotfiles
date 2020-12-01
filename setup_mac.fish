@@ -17,26 +17,44 @@ if test -f ~/dotfiles/brew/arm/.Brewfile; or test -f ~/dotfiles/brew/rosetta2/.B
         cd ~/dotfiles/brew/intel
         brew bundle
     end
+else
+#====================================================================
+# GUIアプリ
+#====================================================================
+    brew cask install alfred
+    brew cask install google-chrome
+    brew cask install google-chrome-canary
+    brew cask install iterm2
+    # fontは Cascadia Code PL https://github.com/microsoft/cascadia-code/releases 
+    brew cask install notion
+    brew cask install slack
+    brew cask install visual-studio-code
 
-    exit
+#====================================================================
+# ghq
+#====================================================================
+# if not type -q go
+#     # sudo apt install -y golang
+#     sudo wget https://storage.googleapis.com/golang/go1.15.5.linux-amd64.tar.gz
+#     sudo tar -C /usr/local -xzf go1.15.5.linux-amd64.tar.gz
+# end
+
+# if not type -q ghq
+#     go get github.com/x-motemen/ghq
+#     echo "[ghq]" >> ~/.gitconfig
+# 	echo "    root = $GHQ_PROJECTS" >> ~/.gitconfig
+# end
+
+# if not type -q peco
+#     go get github.com/peco/peco/cmd/peco
+# end
+
+# if not type -q hub
+#     go get github.com/github/hub
+# end
+
 end
 
-#====================================================================
-# vscodeの用意 vscode公式のSettings Syncの登録は手動
-#====================================================================
-if not type -q code
-    yes | sudo apt-get install curl
-    curl -L https://go.microsoft.com/fwlink/\?LinkID=760868 -o vscode.deb
-    yes | sudo apt install ./vscode.deb
-    reload
-    code --version
-    rm vscode.deb
-end
-# gcc や make など、開発ツールの用意
-#====================================================================
-# if not type -q gcc
-#     yes | sudo apt install build-essential
-# end    
 #====================================================================
 # python
 #====================================================================
