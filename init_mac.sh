@@ -34,20 +34,21 @@ if !(type brew > /dev/null 2>&1); then
         sudo chown $USER homebrew
         curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
     fi
-fi
 
 #====================================================================
 # sshの導入
 #====================================================================
-    mkdir ~/.ssh
-    cd ~/.ssh
+    # mkdir ~/.ssh
+    # cd ~/.ssh
     ssh-keygen -t rsa
-    cd ~
-    yes | sudo apt-get install xclip
-    cat ~/.ssh/id_rsa.pub | xclip -selection clipboard
-    yes | sudo apt-get install xdg-utils
-    xdg-open https://github.com
+    # cd ~
+    # yes | sudo apt-get install xclip
+    # cat ~/.ssh/id_rsa.pub | xclip -selection clipboard
+    pbcopy < ~/.ssh/id_rsa.pub
+    # yes | sudo apt-get install xdg-utils
+    # xdg-open https://github.com
     read -p "Upload SSH public key to GitHub!"
+    cd ~
     git clone git@github.com:tomoino/dotfiles.git
 fi
 #====================================================================
