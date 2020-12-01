@@ -1,10 +1,4 @@
-set JDK_HOME "/usr/lib/jvm/java-11-openjdk-amd64/bin/java"
-set GOPATH $HOME/go
-set GOROOT /usr/local/go/bin
-set PYENV_PATH $HOME/.pyenv/bin
-set POETRY_PATH $HOME/.poetry/bin
-
-set PATH $JDK_HOME $GOPATH/bin $GOROOT $PYENV_PATH $POETRY_PATH $HOME/bin $HOME/.local/bin $PATH 
+source ~/.config/fish/env.fish
 # set -e LIBGL_ALWAYS_INDIRECT
 
 set GHQ_ROOT "~/projects"
