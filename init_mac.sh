@@ -65,9 +65,9 @@ if !(type fish > /dev/null 2>&1); then
     git clone https://github.com/powerline/fonts.git
     cd fonts
     ./install.sh # terminalのフォント変更を忘れずに。
-    # yes | sudo apt-get install fonts-powerline
-    # fisher omf/theme-agnoster
-    # echo exec fish > ~/.bashrc
+    cd ..
+    rm -r fonts
+
     mkdir ~/.config/fish
     ln -s ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
     ln -s ~/dotfiles/fish/alias.fish ~/.config/fish/alias.fish
