@@ -1,4 +1,4 @@
-source ~/.config/fish/env.fish
+source ~/dotfiles/fish/env.fish
 # set -e LIBGL_ALWAYS_INDIRECT
 
 set GHQ_ROOT "~/projects"
