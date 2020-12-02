@@ -31,6 +31,7 @@ else
     brew cask install visual-studio-code
     # fontは Ricty Diminished for Powerline
     brew cask install karabiner-elements
+    brew cask install shiftit
 #====================================================================
 # ghq
 #====================================================================
