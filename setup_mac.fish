@@ -29,29 +29,29 @@ else
     brew cask install notion
     brew cask install slack
     brew cask install visual-studio-code
-
+    # fontは Ricty Diminished for Powerline
+    brew cask install karabiner-elements
 #====================================================================
 # ghq
 #====================================================================
-# if not type -q go
-#     # sudo apt install -y golang
-#     sudo wget https://storage.googleapis.com/golang/go1.15.5.linux-amd64.tar.gz
-#     sudo tar -C /usr/local -xzf go1.15.5.linux-amd64.tar.gz
-# end
+    # まだARMに対応していないみたい
+    # if not type -q go
+    #     brew install golang
+    # end
 
-# if not type -q ghq
-#     go get github.com/x-motemen/ghq
-#     echo "[ghq]" >> ~/.gitconfig
-# 	echo "    root = $GHQ_PROJECTS" >> ~/.gitconfig
-# end
+    # if not type -q ghq
+    #     brew install ghq
+    #     echo "[ghq]" >> ~/.gitconfig
+    #     echo "    root = $GHQ_ROOT" >> ~/.gitconfig
+    # end
 
-# if not type -q peco
-#     go get github.com/peco/peco/cmd/peco
-# end
+    # if not type -q peco
+    #     brew install peco
+    # end
 
-# if not type -q hub
-#     go get github.com/github/hub
-# end
+    # if not type -q hub
+    #     brew install hub
+    # end
 
 end
 

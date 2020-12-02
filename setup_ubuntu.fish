@@ -83,7 +83,7 @@ end
 if not type -q ghq
     go get github.com/x-motemen/ghq
     echo "[ghq]" >> ~/.gitconfig
-	echo "    root = $GHQ_PROJECTS" >> ~/.gitconfig
+	echo "    root = $GHQ_ROOT" >> ~/.gitconfig
 end
 
 if not type -q peco

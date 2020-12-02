@@ -31,9 +31,12 @@ function dcud
   powershell.exe -Command "wsl docker-compose up -d"
 end
 
-if uname != 'Darwin'
-  function open
+function open
+  set osname (uname)
+  if $osname != 'Darwin'
     explorer.exe $argv
+  else
+    open $argv
   end
 end
 
