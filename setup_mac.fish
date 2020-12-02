@@ -32,6 +32,7 @@ else
     # fontは Ricty Diminished for Powerline
     brew cask install karabiner-elements
     brew cask install shiftit
+    brew cask install hyperswitch
 #====================================================================
 # ghq
 #====================================================================
