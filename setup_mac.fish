@@ -33,6 +33,7 @@ else
     brew cask install karabiner-elements
     brew cask install shiftit
     brew cask install hyperswitch
+
 #====================================================================
 # ghq
 #====================================================================
@@ -57,6 +58,25 @@ else
 
 end
 
+# 以下、brewでいれられないもの
+#====================================================================
+# flutter
+#====================================================================
+if not type -q flutter
+    sudo gem install cocoapods
+    pod setup
+
+    # Xcodeをダウンロードしておく https://developer.apple.com/xcode/download/
+    sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+    sudo xcodebuild -runFirstLaunch
+    
+    cd ~
+    git clone https://github.com/flutter/flutter.git
+    echo "set FLUTTER_PATH ~/flutter/bin" >> ~/dotfiles/fish/env.fish
+    echo "set PATH \$FLUTTER_PATH \$PATH" >> ~/dotfiles/fish/env.fish
+    flutter precache
+    flutter doctor # doctorに従ってたりないものをインストール
+end
 #====================================================================
 # python
 #====================================================================
