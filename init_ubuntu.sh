@@ -24,6 +24,9 @@ gsettings set org.gnome.gedit.preferences.encodings shown-in-menu "['UTF-8','SHI
 if !(type git > /dev/null 2>&1); then
     yes | sudo apt-get install git
 
+    git config --global user.name "Tomohiro Inoue" 
+    git config --global user.email 55827264+tomoino@users.noreply.github.com 
+
 #====================================================================
 # sshの導入
 #====================================================================

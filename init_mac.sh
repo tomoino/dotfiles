@@ -11,6 +11,9 @@ if !(type git > /dev/null 2>&1); then
     echo "Installing Command line tools ..."
     xcode-select --install # コマンドラインツールインストール
 
+    git config --global user.name "Tomohiro Inoue" 
+    git config --global user.email 55827264+tomoino@users.noreply.github.com 
+
     if is_arm; then
         # ソフトウェアアップデートで Rosetta2 をインストール。面倒なのでライセンス確認クリックをスキップ
         echo "Installing Rosetta2 ..."
