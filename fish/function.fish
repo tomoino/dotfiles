@@ -31,13 +31,8 @@ function dcud
   powershell.exe -Command "wsl docker-compose up -d"
 end
 
-function open
-  set osname (uname)
-  if $osname != 'Darwin'
-    explorer.exe $argv
-  else
-    open $argv
-  end
+function xopen
+  explorer.exe $argv
 end
 
 function conda
