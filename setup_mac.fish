@@ -33,6 +33,8 @@ else
     brew cask install karabiner-elements
     brew cask install shiftit
     brew cask install hyperswitch
+    brew install docker
+    brew cask install docker
 
 #====================================================================
 # ghq
