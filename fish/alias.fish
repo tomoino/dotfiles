@@ -26,8 +26,8 @@ alias gh 'hub browse (ghq list | peco | cut -d "/" -f 2,3)'
 alias ghc 'hub browse (basename (dirname $PWD))/(basename $PWD)'
 
 # docker
-alias docker 'docker.exe'
-alias docker-compose 'docker-compose.exe'
+# alias docker 'docker.exe'
+# alias docker-compose 'docker-compose.exe'
 
 # Google Cloud Platform
 alias gcloud '~/google-cloud-sdk/bin/gcloud'
