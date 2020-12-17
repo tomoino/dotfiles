@@ -4,7 +4,8 @@ alias ... 'cd ../..'
 
 # lsを使いやすく
 #alias ls 'ls --color=auto --show-control-chars --time-style=long-iso -FH'
-alias ll 'ls -lA'
+# alias ll 'ls -lA'
+alias ll 'exa -hla --git'
 alias la 'ls -A'
 
 # git

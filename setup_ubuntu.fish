@@ -93,3 +93,10 @@ end
 if not type -q hub
     go get github.com/github/hub
 end
+
+#====================================================================
+# exa
+#====================================================================
+if not type -q exa
+    apt install exa
+end
