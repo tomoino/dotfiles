@@ -103,3 +103,10 @@ if not type -q docker
     echo "\n set DOCKER_PATH /mnt/c/Program\ Files/Docker/Docker/resources/bin/">> ~/dotfiles/fish/env.fish
     echo "set PATH \$DOCKER_PATH \$PATH">> ~/dotfiles/fish/env.fish
 end
+
+#====================================================================
+# exa
+#====================================================================
+if not type -q exa
+    apt install exa
+end

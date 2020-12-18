@@ -4,7 +4,8 @@ alias ... 'cd ../..'
 
 # lsを使いやすく
 #alias ls 'ls --color=auto --show-control-chars --time-style=long-iso -FH'
-alias ll 'ls -lA'
+# alias ll 'ls -lA'
+alias ll 'exa -hla --git'
 alias la 'ls -A'
 
 # git
@@ -28,7 +29,7 @@ alias ghc 'hub browse (basename (dirname $PWD))/(basename $PWD)'
 # docker
 # alias docker 'docker.exe'
 # alias docker-compose 'docker-compose.exe'
-alias dps 'docker ps'
+alias dps 'docker ps -a'
 alias dim 'docker images'
 alias dbl 'docker build --build-arg USER_ID=(id -u) --build-arg GROUP_ID=(id -g) . -t'
 alias drun 'docker run -it'
