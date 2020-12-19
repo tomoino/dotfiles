@@ -108,5 +108,8 @@ end
 # exa
 #====================================================================
 if not type -q exa
-    apt install exa
+    curl https://sh.rustup.rs -sSf | sh
+    wget -c https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip
+    unzip exa-linux-x86_64-0.9.0.zip
+    sudo mv exa-linux-x86_64 /usr/local/bin/exa
 end
