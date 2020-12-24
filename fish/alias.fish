@@ -32,9 +32,10 @@ alias ghc 'hub browse (basename (dirname $PWD))/(basename $PWD)'
 alias dps 'docker ps -a'
 alias dim 'docker images'
 alias dbl 'docker build .'
-alias drun 'docker run -it'
+alias drun 'docker run -dit'
 alias dst 'docker start'
 alias dat 'docker attach'
+alias dex 'docker exec'
 
 # Google Cloud Platform
 alias gcloud '~/google-cloud-sdk/bin/gcloud'
