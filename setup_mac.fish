@@ -35,7 +35,8 @@ else
     brew cask install hyperswitch
     brew install docker
     brew cask install docker
-
+    brew install --cask zoomus
+    brew install --cask discord
 
 #====================================================================
 # tex
