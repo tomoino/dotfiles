@@ -99,9 +99,10 @@ end
 # 前提：Docker Desktop for Windows DL済み https://www.docker.com/products/docker-desktop
 #====================================================================
 if not type -q docker
-    echo "">> ~/dotfiles/fish/env.fish
-    echo "\n set DOCKER_PATH /mnt/c/Program\ Files/Docker/Docker/resources/bin/">> ~/dotfiles/fish/env.fish
-    echo "set PATH \$DOCKER_PATH \$PATH">> ~/dotfiles/fish/env.fish
+    # echo "">> ~/dotfiles/fish/env.fish
+    # echo "\n set DOCKER_PATH /mnt/c/Program\ Files/Docker/Docker/resources/bin/">> ~/dotfiles/fish/env.fish
+    # echo "set PATH \$DOCKER_PATH \$PATH">> ~/dotfiles/fish/env.fish
+    curl https://get.docker.com | sh
 end
 
 #====================================================================
