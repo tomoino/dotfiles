@@ -19,6 +19,7 @@ alias gps 'git push'
 alias gpl 'git pull'
 # alias gcl 'git clone'
 alias gdi 'git diff'
+alias grs 'git reset'
 
 alias gcl 'ghq get'
 alias gli 'ghq list --unique'
