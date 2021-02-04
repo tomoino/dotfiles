@@ -50,8 +50,13 @@ function dfish()
 {
    docker exec -it $1 fish
 }
-
 alias dfish='dfish'
+
+function dbash()
+{
+   docker exec -it $1 bash
+}
+alias dbash='dbash'
 
 # 画面消去
 alias c=clear

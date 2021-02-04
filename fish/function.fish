@@ -54,3 +54,7 @@ end
 function dfish
   docker exec -it $argv[1] fish
 end
+
+function dbash
+  docker exec -it $argv[1] bash
+end

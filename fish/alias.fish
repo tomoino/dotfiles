@@ -21,7 +21,15 @@ alias gpl 'git pull'
 alias gdi 'git diff'
 alias grs 'git reset'
 
-alias gcl 'ghq get'
+# alias gcl 'ghq get'
+function gcl
+    if not type -q ghq
+        git clone
+    else
+        ghq get
+    end
+end
+
 alias gli 'ghq list --unique'
 alias gcd 'cd (ghq root)/(ghq list | peco)'
 alias gh 'hub browse (ghq list | peco | cut -d "/" -f 2,3)'
