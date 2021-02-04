@@ -8,7 +8,8 @@ ln -s ~/dotfiles/fish/function.fish ~/.config/fish/function.fish
 mkdir ~/.config/fish/functions
 ln -s ~/dotfiles/fish/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
 mkdir ~/.config/fish/completions/
-touch ~/.config/fish/env.fish
+touch ~/dotfiles/fish/env.fish
+touch ~/.config/fish/fish_variables
     
 # fishの色の設定
 # set | grep fish_color_ で現在の設定を確認できる
