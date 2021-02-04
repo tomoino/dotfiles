@@ -52,5 +52,5 @@ function is_arm
 end
 
 function dfish
-  docker exec $argv[1] fish
+  docker exec -it $argv[1] fish
 end
