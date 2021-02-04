@@ -48,7 +48,7 @@ alias drmi='docker rmi'
 
 function dfish()
 {
-   docker exec -it $1 fish
+   docker exec -it $1 sudo fish
 }
 alias dfish='dfish'
 
