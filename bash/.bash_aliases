@@ -16,7 +16,6 @@ alias la='ls -A'
 # git
 alias gad='git add'
 alias gcm='git commit'
-alias gcmm="git commit -m $1 -m '' -m $2"
 alias gst='git status'
 alias glg='git log'
 alias gbr='git branch'
@@ -26,6 +25,13 @@ alias gpl='git pull'
 alias gcl='git clone'
 alias gdi='git diff'
 alias grs='git reset'
+
+function gcmm()
+{
+   git commit -m $1 -m '' -m $2
+}
+
+alias gcmm='gcmm'
 
 # docker
 alias dps='docker ps -a'
