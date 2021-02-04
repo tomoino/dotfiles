@@ -28,14 +28,14 @@ alias gdi='git diff'
 alias grs='git reset'
 
 # docker
-alias dps 'docker ps -a'
-alias dim 'docker images'
-alias dbl 'docker build .'
-alias drun 'docker run -dit'
-alias dst 'docker start'
-alias dat 'docker attach'
-alias dex 'docker exec'
-alias dds 'sudo service docker start'
+alias dps='docker ps -a'
+alias dim='docker images'
+alias dbl='docker build .'
+alias drun='docker run -dit'
+alias dst='docker start'
+alias dat='docker attach'
+alias dex='docker exec'
+alias dds='sudo service docker start'
 
 # 画面消去
 alias c=clear
