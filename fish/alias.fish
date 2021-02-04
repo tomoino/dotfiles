@@ -36,6 +36,9 @@ alias dst 'docker start'
 alias dat 'docker attach'
 alias dex 'docker exec'
 alias dds 'sudo service docker start'
+alias dstp 'docker stop'
+alias drm 'docker rm'
+alias drmi 'docker rmi'
 
 # Google Cloud Platform
 alias gcloud '~/google-cloud-sdk/bin/gcloud'
