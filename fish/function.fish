@@ -50,3 +50,7 @@ end
 function is_arm
   test $UNAME=="arm64"
 end
+
+function dfish
+  docker exec $argv[1] fish
+end

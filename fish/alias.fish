@@ -28,8 +28,6 @@ alias gh 'hub browse (ghq list | peco | cut -d "/" -f 2,3)'
 alias ghc 'hub browse (basename (dirname $PWD))/(basename $PWD)'
 
 # docker
-# alias docker 'docker.exe'
-# alias docker-compose 'docker-compose.exe'
 alias dps 'docker ps -a'
 alias dim 'docker images'
 alias dbl 'docker build .'
@@ -59,3 +57,14 @@ alias poa 'poetry add'
 # heroku 一時的なalias
 alias hpg 'heroku pg:psql -a alibi-api'
 alias hdeploy 'git push heroku main'
+
+# 画面消去
+alias c 'clear'
+alias cls 'reset'
+
+# ディスクサイズ
+alias df 'df -h'
+alias du 'du -h'
+alias du1 'du -d1'
+
+alias grep 'grep --color'
