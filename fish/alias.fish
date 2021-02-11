@@ -24,9 +24,9 @@ alias grs 'git reset'
 # alias gcl 'ghq get'
 function gcl
     if not type -q ghq
-        git clone
+        git clone $argv[1]
     else
-        ghq get
+        ghq get $argv[1]
     end
 end
 
