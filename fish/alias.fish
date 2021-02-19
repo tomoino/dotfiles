@@ -3,8 +3,6 @@ alias .. 'cd ..'
 alias ... 'cd ../..'
 
 # lsを使いやすく
-#alias ls 'ls --color=auto --show-control-chars --time-style=long-iso -FH'
-# alias ll 'ls -lA'
 alias ll 'exa -hla --git'
 alias la 'ls -A'
 
@@ -17,11 +15,9 @@ alias gbr 'git branch'
 alias gco 'git checkout'
 alias gps 'git push'
 alias gpl 'git pull'
-# alias gcl 'git clone'
 alias gdi 'git diff'
 alias grs 'git reset'
 
-# alias gcl 'ghq get'
 function gcl
     if not type -q ghq
         git clone $argv[1]
