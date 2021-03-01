@@ -1,7 +1,7 @@
 #!/bin/bash
 if !(type fish > /dev/null 2>&1); then
-    spt-get -y install software-properties-common build-essential unzip
-    apt-add-repository -y ppa:fish-shell/release-3
+    apt-get -y install software-properties-common build-essential unzip
+    apt-add-repository ppa:fish-shell/release-3
     apt-get ―y update
     apt-get -y install fish fonts-powerline
     apt-get clean
