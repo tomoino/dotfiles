@@ -47,5 +47,6 @@ if !(type unzip > /dev/null 2>&1); then
     apt-get -y install unzip
 fi
 curl https://sh.rustup.rs -sSf | sh
-wget -q -O - https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip | unzip -
+wget -q https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip
+unzip exa-linux-x86_64-0.9.0.zip
 sudo mv exa-linux-x86_64 /usr/local/bin/exa
