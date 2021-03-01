@@ -1,5 +1,13 @@
 #!/bin/bash
-# echo exec fish > ~/.bashrc
+if !(type fish > /dev/null 2>&1); then
+    spt-get -y install software-properties-common build-essential unzip
+    apt-add-repository -y ppa:fish-shell/release-3
+    apt-get ―y update
+    apt-get -y install fish fonts-powerline
+    apt-get clean
+fi
+
+# link dotfiles
 mkdir ~/.config
 mkdir ~/.config/fish
 ln -s ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
@@ -11,8 +19,7 @@ mkdir ~/.config/fish/completions/
 touch ~/dotfiles/fish/env.fish
 touch ~/.config/fish/fish_variables
     
-# fishの色の設定
-# set | grep fish_color_ で現在の設定を確認できる
+# fish color
 set fish_color_autosuggestion 969896
 set fish_color_cancel -r
 set fish_color_command 8abeb7
@@ -38,6 +45,5 @@ set fish_color_valid_path --underline
 
 # exa
 curl https://sh.rustup.rs -sSf | sh
-wget -c https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip
-unzip exa-linux-x86_64-0.9.0.zip
+wget -q -O - https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip | unzip -
 sudo mv exa-linux-x86_64 /usr/local/bin/exa
