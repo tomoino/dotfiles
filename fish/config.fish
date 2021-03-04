@@ -13,6 +13,10 @@ source ~/.config/fish/function.fish
 if type -q pyenv
     pyenv init - | source
 end
+
+if not type -q python
+    alias python 'python3'
+end
 # if type -q pyenv
 #   set -gx PATH '/home/user/.pyenv/shims' $PATH
 #   set -gx PYENV_SHELL fish
