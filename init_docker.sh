@@ -1,11 +1,4 @@
 #!/bin/bash
-if !(type fish > /dev/null 2>&1); then
-    apt-add-repository ppa:fish-shell/release-3
-    apt-get ―y update
-    apt-get -y install fish fonts-powerline
-    apt-get clean
-fi
-
 # link dotfiles
 mkdir ~/.config
 mkdir ~/.config/fish
@@ -43,9 +36,6 @@ set fish_color_user brgreen
 set fish_color_valid_path --underline
 
 # exa
-if !(type unzip > /dev/null 2>&1); then
-    apt-get -y install unzip
-fi
 curl https://sh.rustup.rs -sSf | sh
 wget -q https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip
 unzip exa-linux-x86_64-0.9.0.zip
