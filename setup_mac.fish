@@ -52,19 +52,20 @@ sudo tlmgr update --self --all
     #     brew install golang
     # end
 
-    # if not type -q ghq
-    #     brew install ghq
-    #     echo "[ghq]" >> ~/.gitconfig
-    #     echo "    root = $GHQ_ROOT" >> ~/.gitconfig
-    # end
+    if not type -q ghq
+        brew install ghq
+        echo "[ghq]" >> ~/.gitconfig
+        echo "    root = $GHQ_ROOT" >> ~/.gitconfig
+        git config --global ghq.root '~/projects'
+    end
 
-    # if not type -q peco
-    #     brew install peco
-    # end
+    if not type -q peco
+        brew install peco
+    end
 
-    # if not type -q hub
-    #     brew install hub
-    # end
+    if not type -q hub
+        brew install hub
+    end
 
 end
 
