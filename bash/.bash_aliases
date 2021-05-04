@@ -46,6 +46,12 @@ alias dstp='docker stop'
 alias drm='docker rm'
 alias drmi='docker rmi'
 
+# docker shell
+alias dbs='sh docker/build.sh'
+alias drs='sh docker/run.sh'
+alias des='sh docker/exec.sh'
+alias dres='sh docker/run.sh && sh docker/exec.sh'
+
 function dfish()
 {
    docker exec -it $1 sudo fish
