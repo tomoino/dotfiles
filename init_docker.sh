@@ -36,7 +36,5 @@ set fish_color_user brgreen
 set fish_color_valid_path --underline
 
 # exa
-curl https://sh.rustup.rs -sSf | sh -y
-wget -q https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip
-unzip exa-linux-x86_64-0.9.0.zip
-sudo mv exa-linux-x86_64 /usr/local/bin/exa
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+cargo install exa
