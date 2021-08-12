@@ -17,6 +17,7 @@ alias gps 'git push'
 alias gpl 'git pull'
 alias gdi 'git diff'
 alias grs 'git reset'
+alias gtr "git tree"
 
 function gcl
     if not type -q ghq
