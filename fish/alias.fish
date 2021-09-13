@@ -45,6 +45,8 @@ alias dstp 'docker stop'
 alias drm 'docker rm'
 alias drmi 'docker rmi'
 
+alias dcu 'docker-compose up'
+
 # docker shell
 alias dbs 'sh docker/build.sh'
 alias drs 'sh docker/run.sh'
