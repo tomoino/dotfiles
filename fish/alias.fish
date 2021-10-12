@@ -45,6 +45,7 @@ alias drm 'docker rm'
 alias drmi 'docker rmi'
 
 alias dcu 'docker-compose up -d'
+alias dcd 'docker-compose down'
 
 # docker shell
 alias dbs 'sh docker/build.sh'
