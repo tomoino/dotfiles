@@ -51,7 +51,6 @@ alias dcd 'docker-compose down'
 alias dbs 'sh docker/build.sh'
 alias drs 'sh docker/run.sh'
 alias des 'sh docker/exec.sh'
-alias dres 'sh docker/run.sh && sh docker/exec.sh'
 alias dss 'sh docker/setup.sh'
 
 # Google Cloud Platform
