@@ -43,6 +43,7 @@ alias dds 'sudo service docker start'
 alias dstp 'docker stop'
 alias drm 'docker rm'
 alias drmi 'docker rmi'
+alias dpr 'docker system prune -a --filter "until=24h"'
 alias dcp 'docker container prune'
 
 alias dcu 'docker-compose up -d'
