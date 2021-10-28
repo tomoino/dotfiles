@@ -86,3 +86,6 @@ alias du 'du -h'
 alias du1 'du -d1'
 
 alias grep 'grep --color'
+
+# pytest
+alias pyt "pytest -v"
