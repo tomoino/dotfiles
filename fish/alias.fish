@@ -54,6 +54,7 @@ alias dbs 'sh docker/build.sh'
 alias drs 'sh docker/run.sh'
 alias des 'sh docker/exec.sh'
 alias dss 'sh docker/setup.sh'
+alias dfs 'sh docker/down.sh'
 
 # Google Cloud Platform
 alias gcloud '~/google-cloud-sdk/bin/gcloud'
