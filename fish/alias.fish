@@ -90,3 +90,6 @@ alias grep 'grep --color'
 
 # pytest
 alias pyt "pytest -v"
+
+# other
+alias untar='tar -zxvf'
