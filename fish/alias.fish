@@ -89,7 +89,7 @@ alias du1 'du -d1'
 alias grep 'grep --color'
 
 # pytest
-alias pyt "pytest -v"
+alias pyt "pytest -svv"
 
 # other
 alias untar='tar -zxvf'
