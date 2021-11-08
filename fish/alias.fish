@@ -93,3 +93,4 @@ alias pyt "pytest -svv"
 
 # other
 alias untar='tar -zxvf'
+alias todo="grep -rn 'TODO:'"
