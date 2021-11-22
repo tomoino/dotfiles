@@ -72,5 +72,7 @@ zle -N accept-line expand-alias-and-accept-line
 # aliases
 alias ll="exa -hla --git"
 abbr g="git"
+abbr gad="git add"
 abbr gst="git status"
+abbr gcm="git commit"
 abbr reload="source ~/dotfiles/zsh/.zprezto/zshrc"
