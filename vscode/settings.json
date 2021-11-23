@@ -1,7 +1,7 @@
 {
     "editor.fontFamily": "'Ricty Diminished for Powerline', Consolas, 'Courier New', monospace",
     "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
-    "terminal.integrated.fontFamily": "Cica",
+    "terminal.integrated.fontFamily": "CascadiaCode Nerd Font",
     "terminal.integrated.shellArgs.windows": [
         "~",
         "fish"
