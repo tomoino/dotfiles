@@ -81,6 +81,7 @@ if not type -q go
 end
 
 if not type -q ghq
+    set GHQ_ROOT "~/projects"
     go get github.com/x-motemen/ghq
     echo "[ghq]" >> ~/.gitconfig
 	echo "    root = $GHQ_ROOT" >> ~/.gitconfig
@@ -113,4 +114,12 @@ if not type -q exa
     wget -c https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip
     unzip exa-linux-x86_64-0.9.0.zip
     sudo mv exa-linux-x86_64 /usr/local/bin/exa
+end
+
+#====================================================================
+# other
+#====================================================================
+if not type -q jq
+    sudo apt -y update
+    sudo apt -y install jq
 end

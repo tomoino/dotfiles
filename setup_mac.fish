@@ -53,6 +53,7 @@ sudo tlmgr update --self --all
     # end
 
     if not type -q ghq
+        set GHQ_ROOT "~/projects"
         brew install ghq
         echo "[ghq]" >> ~/.gitconfig
         echo "    root = $GHQ_ROOT" >> ~/.gitconfig
