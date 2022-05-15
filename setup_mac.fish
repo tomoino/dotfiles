@@ -37,6 +37,7 @@ else
     # brew cask install docker
     brew install --cask zoomus
     brew install --cask discord
+    brew install --cask mactex
 
 #====================================================================
 # tex

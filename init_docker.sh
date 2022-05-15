@@ -36,8 +36,6 @@ set fish_color_user brgreen
 set fish_color_valid_path --underline
 
 # exa
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-source $HOME/.cargo/env
-echo -e "\nset CARGO_PATH \$HOME/.cargo/bin" >> ~/dotfiles/fish/config.fish
-echo -e "\nset PATH \$CARGO_PATH \$PATH" >> ~/dotfiles/fish/config.fish
-cargo install exa
+sudo wget -c https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-v0.10.1.zip
+sudo unzip exa-linux-x86_64-v0.10.1.zip -d exa-linux-x86_64
+sudo mv exa-linux-x86_64/bin/exa /usr/local/bin/exa
