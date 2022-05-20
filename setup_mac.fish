@@ -37,7 +37,7 @@ else
     # brew cask install docker
     brew install --cask zoomus
     brew install --cask discord
-    brew install --cask mactex
+    brew install --cask mactex-no-gui
 
 #====================================================================
 # tex
@@ -134,7 +134,7 @@ end
 #     sudo apt-get install -y texlive-full
 #     ln -s ~/dotfiles/latex/.latexmkrc ~/.latexmkrc
 # end
-
+ln -s ~/dotfiles/latex/.latexmkrc ~/.latexmkrc
 #====================================================================
 # ghq
 #====================================================================
