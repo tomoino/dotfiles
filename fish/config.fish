@@ -1,8 +1,6 @@
 source ~/dotfiles/fish/env.fish
 # set -e LIBGL_ALWAYS_INDIRECT
 
-set GHQ_ROOT "~/projects"
-
 # アーキテクチャ名は UNAME に入れておく
 set UNAME (uname -m)
 
